@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hónap kiválasztása</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <label for="honapok">Válassz egy hónapot:</label>
+    <select id="honapok" name="honapok" onchange="generate()">
+        <option value="">--Válassz--</option>
+        <option value="januar">Január</option>
+        <option value="februar">Február</option>
+        <option value="marcius">Március</option>
+        <option value="aprilis">Április</option>
+        <option value="majus">Május</option>
+        <option value="junius">Június</option>
+        <option value="julius">Július</option>
+        <option value="augusztus">Augusztus</option>
+        <option value="szeptember">Szeptember</option>
+        <option value="oktober">Október</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+    </select>
+
+    <br><br>
+
+    <div id="table-container"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
